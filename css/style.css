@@ -1,0 +1,60 @@
+html, body{
+  margin: auto;
+  padding: 0;
+}
+
+.content {
+  background: red;
+  display: block;
+  height: 768px;
+}
+
+.header1{
+  background-color: blue;
+  display: block;
+  height: 0;
+}
+
+#_x31_{
+  opacity: 0;
+  transition: transform 2s, opacity 2s, fill 4s;
+  transition-timing-function: ease;
+
+}
+
+#_x32_:hover ~ #_x31_ rect, #_x32_:hover ~ #_x31_{
+  fill:orange;
+  opacity:1;
+  /* x:1100.5px; */
+}
+
+ #_x32_:hover ~ #_x31_ text{
+  transform: matrix(1 0 0 1 1200 214.2998);
+}
+
+ #_x32_:hover ~ #_x31_ text tspan:nth-child(2){
+   fill: orange;
+   x: 100px;
+ }
+
+#_x32_:hover rect{
+  transform: translate(-20px,-20px);
+  width:420px;
+  height:200px;
+}
+
+
+
+
+#_x32_:hover ~ #_x31_{
+  fill: red;
+  transform: translate(100px);
+}
+
+
+
+
+.st0{fill:#00FFFF;}
+.st1{fill:#662D91;}
+.st2{fill:#1B1464;}
+.st3{fill:#0000FF;}
