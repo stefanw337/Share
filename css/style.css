@@ -1,60 +1,168 @@
-html, body{
+/*--- General---*/
+
+body,html{
+  margin:0;
+  padding:0;
+  background-color: lightgray;
+  font-family: 'Ubuntu', sans-serif;
+  src:url(Fonts/Ubuntu/Ubuntu-Regular);
+  color: #333;
+}
+
+/* ---Colors---
+#1C863C Grün
+#DC1A7B Magenta     */
+
+/*--- Header Section ---*/
+.leistemax{
+  width:100%;
+  background-color: #222;
+}
+
+.leiste{
+  width: 100%;
+  max-width: 1000px;
+  height: 90px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: inherit;
+  display: flex;
+}
+
+.logo{
+  height: 100%;
+}
+
+.leiste h1{
   margin: auto;
-  padding: 0;
+  color: #FFFFFF;
 }
 
-.content {
-  background: red;
-  display: block;
-  height: 768px;
+.gradient{
+  height:16px;
+  width:100%;
+  background-image: linear-gradient( rgba(100,100,100,0.5), rgba(100,100,100,0));
+
 }
 
-.header1{
-  background-color: blue;
-  display: block;
-  height: 0;
+
+/*--- Body Section ---*/
+
+.buttonwrap{
+  text-align: center;
+  vertical-align: middle;
+  margin: 30px 0 0;
 }
 
-#_x31_{
+.icons{
+  margin: auto 20px auto;
+  height: 50px;
+  width: 50px;
+}
+
+.content{
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 600px;
+  height: 100vh;
+  max-height: 500px;
+  background-color: white;
+  margin: 24px auto 0;
+}
+
+.left, .right{
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.content img{
+  object-fit: cover;
+  width: 100%;
+  transition: 1s ease;
+  opacity: 0.5;
+}
+
+.text {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  right: 16px;
+  font-size: 20px;
+  z-index: 100;
+  background-color: rgba(255,255,255,0.8);
+  padding: 0 15px;
   opacity: 0;
-  transition: transform 2s, opacity 2s, fill 4s;
-  transition-timing-function: ease;
-
-}
-
-#_x32_:hover ~ #_x31_ rect, #_x32_:hover ~ #_x31_{
-  fill:orange;
-  opacity:1;
-  /* x:1100.5px; */
-}
-
- #_x32_:hover ~ #_x31_ text{
-  transform: matrix(1 0 0 1 1200 214.2998);
-}
-
- #_x32_:hover ~ #_x31_ text tspan:nth-child(2){
-   fill: orange;
-   x: 100px;
- }
-
-#_x32_:hover rect{
-  transform: translate(-20px,-20px);
-  width:420px;
-  height:200px;
+  word-wrap:break-word;
+  font-size: 1em;
 }
 
 
 
-
-#_x32_:hover ~ #_x31_{
-  fill: red;
-  transform: translate(100px);
+#body h1{
+  font-size: 3rem;
+  margin: auto;
+  text-align: center;
+  color: #333;
 }
 
+#body h2{
+  margin-bottom: 0px;
+}
 
+#body p{
+  margin-top: 6px;
+}
 
+/* ---app--- */
+.appvorst{
+  margin: auto;
+  margin-top: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
 
-.st0{fill:#00FFFF;}
-.st1{fill:#662D91;}
-.st2{fill:#1B1464;}
-.st3{fill:#0000FF;}
+.applogo{
+  float:left;
+  height: 100px;
+  width:100px;
+  margin: 20px;
+  background-color: red;
+}
+
+.apptext{
+  margin:20px;
+  float:left;
+  background-color: green;
+}
+
+/* ---footer--- */
+
+.footer{
+  text-align: center;
+  padding: 10px 10px 30px;
+  margin: 40px 0 0;
+  background-color: #EEE;
+}
+
+/* ANIMATIONS */
+
+.left:hover img, .right:hover img{
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.left:hover .text, .right:hover .text{
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.icons:hover{
+  transform: scale(1.1);
+}

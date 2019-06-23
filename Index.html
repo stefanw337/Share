@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
     <title></title>
   </head>
   <body>
 
-  <section id="header">
 
-    <div class="container col-lg-12 header1"></div>
-
-      <div class="container header2"></div>
-
-  </section>
-
-  <section id="content col-lg-9">
-
-    <div class="container col-lg-9 content">
-    <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-       viewBox="0 0 1440 720" style="enable-background:new 0 0 1440 720;" xml:space="preserve">
-    <style type="css/style.css">
-
-    </style>
-    <g id="_x34_">
-      <rect x="0.4" y="0.4" class="st0" width="1439.1" height="719.1"/>
-      <path d="M1439.1,0.9v718.2H0.9V0.9H1439.1 M1440,0H0v720h1440V0L1440,0z"/>
-    </g>
-    <g id="_x33_">
-      <rect  x="0.5" y="360.5" class="st1 text" width="896" height="359"/>
-      <path d="M896,361V719H1V361H896 M897,360H0v360h897V360L897,360z"/>
-    </g>
-    <g id="_x32_" class="boxbox">
-      <rect  x="1046.4" y="539.4" class="st2 box" width="393.1" height="180.1"/>
-
-    </g>
-
-    <g id="_x31_" class="ok" transform="translate()" stroke-width="5" opacity="1">
-      <rect x="971.5" y="183.5" class="st3" width="212" height="484">
-
-      </rect>
-      <text transform="matrix(1 0 0 1 986 214.2998)"><tspan x="0" y="0" class="st4 st5">Hier stehen </tspan><tspan x="0" y="36" class="st4 st5">sehr informa</tspan><tspan x="157.9" y="36" class="st4 st5">-</tspan><tspan x="0" y="72" class="st4 st5">tive Informati</tspan><tspan x="168.1" y="72" class="st4 st5">-</tspan><tspan x="0" y="108" class="st4 st5">onen.</tspan></text>
-
-    </g>
+<!-- Header Section -->
 
 
-    </svg>
+    <section id="Header">
+<div class="leistemax">
+
+      <div class="leiste">
+        <img class="logo"src="svg/Logo.svg"/>
+        <h1>ShareIt</h1>
+        <img style="visibility: hidden" class="logo"src="svg/Logo.svg"/>
+      </div>
+
+      <div class="Verlauf"></div>
+    </div>
+
+    <div class="gradient">
 
     </div>
 
-  </section>
-
-  </body>
+    </section>
 
 
+<!-- Body Section -->
 
+
+
+
+    <section id="body">
+        <h1>Du hast die Wahl...</h1>
+
+        <div class="buttonwrap">
+
+            <img onclick="loadScene1()" class="icons" src="img/besteck-i.png" alt="">
+
+            <img onclick="loadScene2()" class="icons" src="img/auto-i.png" alt="">
+
+            <img  onclick="loadScene3()" class="icons" src="img/kleidung-i.png" alt="">
+
+
+        </div>
+
+      <div id="content" class="content" name="content">
+        <!-- <div class="left">
+          <div class="text">
+            <h2>Der Struggle-Weg</h2>
+            <p>Mach dir wie jeden Tag Nudeln mit Tomatensoße und genieße deine Einsamkeit.</p>
+
+          </div>
+          <img src="img/eat1.jpg" alt="">
+
+
+        </div>
+        <div class="right">
+          <div class="text">
+            <h2>Der nachhltige Weg</h2>
+            <p>Hol' dir Apps wie ... und lass dich mal auf etwas Neues einladen</p>
+
+          </div>
+          <img src="img/eat2.jpg" alt="">
+
+        </div> -->
+      </div>
+    </section>
+
+    <!-- <section id="apps">
+      <div class="appvorst">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Kleiderkreisel</h1><p>super App</p>
+        </div>
+      </div>
+    </section> -->
+
+
+    <section id="footer">
+      <div class="footer">
+        <p>© ShareIt GmbH</p>
+      </div>
+    </section>
+
+
+    <script>
+    var scene1 = "<div class='left'><div class='text'><h2>Der Struggle-Weg</h2><p>Mach dir wie jeden Tag Nudeln mit Tomatensoße und genieße deine Einsamkeit.</p></div><img src='img/eat1.jpg' alt=''></div><div class='right'><div class='text'><h2>Der nachhltige Weg</h2><p>Hol' dir Apps wie ... und lass dich mal auf etwas Neues einladen</p></div><img src='img/Essen.jpg' alt=''></div>";
+
+    var scene2 = "<div class='left'><div class='text'><h2>Der Struggle-Weg</h2><p>Alleine fahr'n is doof. Nicht nur ist die fahrt weniger unterhaltsam, du verbrauchst auch noch wesentlich mehr Sprit und somit wertvolle Ressourcen.</p></div><img src='img/eat1.jpg' alt=''></div><div class='right'><div class='text'><h2>Der nachhltige Weg</h2><p>Such dir Leute, bei denen du mitfahren kannst. Somit habt ihr alle mehr spaß und ihr könnt sogar Fahrtkosten sparen. Apps wie ... können dir dabei helfen.</p></div><img src='img/Mobilität.jpg' alt=''></div>";
+
+    var scene3 = "<div class='left'><div class='text'><h2>Der Struggle-Weg</h2><p>Schon wieder nicht das passende Outfit an? Peinlich.</p></div><img src='img/Kleidung_Tim.jpg' alt=''></div><div class='right'><div class='text'><h2>Der nachhltige Weg</h2><p>Ja, sogar Kleidung läst sich sharen. KLeiderkreisel...</p></div><img src='img/Kleidung.jpg' alt=''></div>";
+
+    function loadScene1(){
+      document.getElementById("content").innerHTML = scene1;
+    }
+
+    function loadScene2(){
+      document.getElementById("content").innerHTML = scene2;
+    }
+
+    function loadScene3(){
+      document.getElementById("content").innerHTML = scene3;
+    }
+
+window.onload = loadScene1();
+
+
+
+    </script>
+
+
+</body>
 
 </html>
