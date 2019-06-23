@@ -80,20 +80,24 @@
       </div>
     </section>
 
-    <section id="apps-essen">
+    <section id="apps-essen" class="app">
       <div class="appvor">
-        <div class="applogo"></div>
-        <div class="apptext"><h1>Toogoodtogo</h1><p>super App</p>
+        <div class="applogo">
+          <img src="img/appicons/toogoodtogo.svg" alt="">
+        </div>
+        <div class="apptext"><h1>TooGoodtoGo</h1><p>super App</p>
         </div>
       </div>
       <div class="appvor">
-        <div class="applogo"></div>
+        <div class="applogo">
+          <img src="img/appicons/foodsharing.png" alt="">
+        </div>
         <div class="apptext"><h1>Fodsharing dings</h1><p>super App</p>
         </div>
       </div>
     </section>
 
-    <section id="apps-auto">
+    <section id="apps-auto" class="app">
       <div class="appvor">
         <div class="applogo"></div>
         <div class="apptext"><h1>Autoapp</h1><p>super App</p>
@@ -106,7 +110,7 @@
       </div>
     </section>
 
-    <section id="apps-kleidung">
+    <section id="apps-kleidung" class="app">
       <div class="appvor">
         <div class="applogo"></div>
         <div class="apptext"><h1>Kleiderkreisel</h1><p>super App</p>
@@ -123,6 +127,11 @@
     <section id="footer">
       <div class="footer">
         <p>© ShareIt GmbH</p>
+        <a href="youtube.com"><img src="img/youtube-i.png" alt=""></a>
+        <a><img src="img/twitter-i.png" alt=""></a>
+        <a><img src="img/google-i.png" alt=""></a>
+        <a><img src="img/facebook-i.png" alt=""></a>
+
       </div>
     </section>
 
@@ -134,28 +143,38 @@
 
     var scene3 = "<div class='left'><div class='text'><h2>Der Struggle-Weg</h2><p>Schon wieder nicht das passende Outfit an? Peinlich.</p></div><img src='img/Kleidung_Tim.jpg' alt=''></div><div class='right'><div class='text'><h2>Der nachhltige Weg</h2><p>Ja, sogar Kleidung läst sich sharen. KLeiderkreisel...</p></div><img src='img/Kleidung.jpg' alt=''></div>";
 
+
+
+    var i = 1;
+    var apps = document.getElementsByClassName("app");
+
+
+
+    function remove(){
+
+      for (x = 0; x < apps.length; x++) {
+         apps[x].style.display= "none";
+         }
+      }
+
     function loadScene1(){
       document.getElementById("content").innerHTML = scene1;
-
+      remove();
       document.getElementById("apps-essen").style.display = "block";
-      document.getElementById("apps-auto").style.display = "none"
-      document.getElementById("apps-kleidung").style.display = "none";
     }
 
     function loadScene2(){
       document.getElementById("content").innerHTML = scene2;
-
-      document.getElementById("apps-essen").style.display = "none";
+      remove();
       document.getElementById("apps-auto").style.display = "block"
-      document.getElementById("apps-kleidung").style.display = "none";
+
     }
 
     function loadScene3(){
       document.getElementById("content").innerHTML = scene3;
-
-      document.getElementById("apps-essen").style.display = "none";
-      document.getElementById("apps-auto").style.display = "none"
+      remove();
       document.getElementById("apps-kleidung").style.display = "block";
+
     }
 
 window.onload = loadScene1();
