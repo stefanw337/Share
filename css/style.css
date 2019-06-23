@@ -102,12 +102,21 @@ body,html{
   word-wrap:break-word;
   font-size: 1em;
 }
+.uberuns{
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+  padding: 20px;
+  font-size: 2em;
+}
 
+.uberuns h1{
+text-align: center;
+}
 
-
-#body h1{
-  font-size: 3rem;
-  margin: auto;
+.wahl{
+  font-size: 3em;
+  margin:  80px auto 0;
   text-align: center;
   color: #333;
 }
@@ -121,15 +130,15 @@ body,html{
 }
 
 /* ---app--- */
-.appvorst{
+.appvor{
+  background-color: yellow;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 50px;
   max-width: 1000px;
   width: 100%;
 }
 
 .applogo{
-  float:left;
   height: 100px;
   width:100px;
   margin: 20px;
@@ -138,7 +147,7 @@ body,html{
 
 .apptext{
   margin:20px;
-  float:left;
+
   background-color: green;
 }
 
@@ -165,4 +174,11 @@ body,html{
 
 .icons:hover{
   transform: scale(1.1);
+}
+
+
+/* ---sections--- */
+
+#apps-essen, #apps-auto, #apps-kleidung{
+  display:none;
 }

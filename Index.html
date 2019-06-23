@@ -36,7 +36,15 @@
 
 
     <section id="body">
-        <h1>Du hast die Wahl...</h1>
+      <div class="uberuns">
+
+
+        <h1 class="ü">Über ShareIt</h1>
+        <p class="">wie bei shareit blablalba ganz viel text kjbhega ugevfuhsvf suzefgvsdhuf af auwwgf uahsb auh asuhfvaugsv asvf augsv fshaf iashgf uashbfzu asf auf hasb .</p>
+      </div>
+
+
+        <h1 class="wahl">Du hast die Wahl...</h1>
 
         <div class="buttonwrap">
 
@@ -72,13 +80,44 @@
       </div>
     </section>
 
-    <!-- <section id="apps">
-      <div class="appvorst">
+    <section id="apps-essen">
+      <div class="appvor">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Toogoodtogo</h1><p>super App</p>
+        </div>
+      </div>
+      <div class="appvor">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Fodsharing dings</h1><p>super App</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps-auto">
+      <div class="appvor">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Autoapp</h1><p>super App</p>
+        </div>
+      </div>
+      <div class="appvor">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Autoapp</h1><p>super App</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="apps-kleidung">
+      <div class="appvor">
         <div class="applogo"></div>
         <div class="apptext"><h1>Kleiderkreisel</h1><p>super App</p>
         </div>
       </div>
-    </section> -->
+      <div class="appvor">
+        <div class="applogo"></div>
+        <div class="apptext"><h1>Kleiderkreisel</h1><p>super App</p>
+        </div>
+      </div>
+    </section>
 
 
     <section id="footer">
@@ -97,14 +136,26 @@
 
     function loadScene1(){
       document.getElementById("content").innerHTML = scene1;
+
+      document.getElementById("apps-essen").style.display = "block";
+      document.getElementById("apps-auto").style.display = "none"
+      document.getElementById("apps-kleidung").style.display = "none";
     }
 
     function loadScene2(){
       document.getElementById("content").innerHTML = scene2;
+
+      document.getElementById("apps-essen").style.display = "none";
+      document.getElementById("apps-auto").style.display = "block"
+      document.getElementById("apps-kleidung").style.display = "none";
     }
 
     function loadScene3(){
       document.getElementById("content").innerHTML = scene3;
+
+      document.getElementById("apps-essen").style.display = "none";
+      document.getElementById("apps-auto").style.display = "none"
+      document.getElementById("apps-kleidung").style.display = "block";
     }
 
 window.onload = loadScene1();
