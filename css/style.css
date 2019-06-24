@@ -3,10 +3,10 @@
 body,html{
   margin:0;
   padding:0;
-  background-color: lightgray;
+  background-color: #D3D3D3;
   font-family: 'Ubuntu', sans-serif;
   src:url(Fonts/Ubuntu/Ubuntu-Regular);
-  color: #333;
+  color: #222;
 }
 
 /* ---Colors---
@@ -57,19 +57,20 @@ body,html{
 
 .icons{
   margin: auto 20px auto;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
+  transition: 0.1s ease;
 }
 
 .content{
   position: relative;
   width: 100%;
   max-width: 1000px;
-  min-width: 600px;
   height: 100vh;
   max-height: 500px;
   background-color: white;
   margin: 24px auto 50px;
+  box-shadow: 0px 2px rgba(0,0,0,0.2);
 }
 
 .left, .right{
@@ -107,10 +108,29 @@ body,html{
   width: 100%;
   padding: 20px;
   font-size: 2em;
+  box-sizing: border-box;
 }
 
 .uberuns h1{
 text-align: center;
+}
+
+.uberuns p{
+  text-align: center;
+
+
+}
+
+.border{
+  border: 10px solid;
+  border-width: 30px;
+  padding: 0px;
+  -webkit-border-image: url(border2.png) 30 round; /* Safari 3.1-5 */
+  -o-border-image: url(border2.png) 30 round; /* Opera 11-12.1 */
+  border-image-source: url(../img/border.png);
+  border-image-slice: 33.4% stretch;
+  border-image-outset: 0px;
+
 }
 
 .wahl{
@@ -130,11 +150,12 @@ text-align: center;
 
 /* ---app--- */
 .appvor{
-  background-color: #EEE;
+  background-color: #F0F0F0;
   margin: auto;
   margin-top: 25px;
   max-width: 1000px;
   width: 100%;
+  box-shadow: 0px 2px rgba(0,0,0,0.2);
 }
 
 .applogo{
@@ -145,7 +166,7 @@ text-align: center;
 
 .applogo img{
   height: 100%;
-  padding: 10px;
+  padding: 20px 10px 10px;
 }
 
 .apptext{
@@ -153,13 +174,28 @@ text-align: center;
   padding: 10px;
 }
 
+.apptext p:nth-child(2)::before{
+  content: "Konzept: ";
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.apptext p:nth-child(3)::before{
+  content: "Vorteil: ";
+  font-size: 1.1em;
+  font-weight: bold;
+}
 /* ---footer--- */
 
 .footer{
   text-align: center;
   padding: 10px 10px 30px;
   margin: 0px 0 0;
-  background-color: #EEE;
+  background-color: #F0F0F0;
+}
+
+.footer img{
+  height:60px;
 }
 
 /* ANIMATIONS */
