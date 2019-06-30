@@ -49,6 +49,10 @@ body,html{
 
 /*--- Body Section ---*/
 
+#intro{
+
+}
+
 .buttonwrap{
   text-align: center;
   vertical-align: middle;
@@ -102,23 +106,41 @@ body,html{
   word-wrap:break-word;
   font-size: 1em;
 }
+
+
 .uberuns{
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   padding: 20px;
   font-size: 2em;
   box-sizing: border-box;
+
+
+}
+
+.teasertext{
+  /* background-color: #F0F0F0; */
+  /* padding: 20px 40px; */
+  /* border-radius: 20px;
+  box-shadow: 0px 2px rgba(0,0,0,0.2); */
+  box-sizing: border-box;
+
 }
 
 .uberuns h1{
 text-align: center;
+font-size: 1em;
 }
 
 .uberuns p{
-  text-align: center;
+  max-width: 1000px;
+  text-align: justify;
+  font-size: 0.7em;
+}
 
-
+.teaserpic{
+  width: 20px;
 }
 
 .border{
@@ -153,7 +175,7 @@ text-align: center;
   background-color: #F0F0F0;
   margin: auto;
   margin-top: 25px;
-  max-width: 1000px;
+  max-width: 800px;
   width: 100%;
   box-shadow: 0px 2px rgba(0,0,0,0.2);
 }
@@ -212,6 +234,7 @@ text-align: center;
 
 .icons:hover{
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 
